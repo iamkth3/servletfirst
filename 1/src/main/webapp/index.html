@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form page</title>
+</head>
+<style>
+	.container{
+		width: 40%;
+		border: black;
+		margin: auto;
+		padding: 20px;
+		font-size: 20px;
+	}
+	#myform table tr td input{
+		font-size: 20px;
+	}
+</style>
+<body>
+	<div class="container" >
+		<h1>My form</h1>
+		<form id="myform" action="registerServlet" method="post"">
+			<table>
+				<tr>
+					<td>Enter your Name:</td>
+					<td><input type="text" name="username" placeholder="Enter here"></td>
+				</tr>
+				<tr>
+					<td>Enter your Password:</td>
+					<td><input type="password" name="password" placeholder="Enter here"></td>
+				</tr>
+				<tr>
+					<td>Enter your Email:</td>
+					<td><input type="email" name="email" placeholder="Enter here"></td>
+				</tr>
+				<tr>
+					<td>Select your gender:</td>
+					<td><input type="radio" name="gender" value="male">Male &nbsp; &nbsp;<input type="radio" name="gender" value="female">Female</td>
+				</tr>
+				<tr>
+					<td>Select your Course:</td>
+					<td>
+						<select name="course">
+							<option value="Java">Java</option>
+							<option value="C++">C++</option>
+							<option value="C#">C#</option>
+							<option value="Python">Python</option>
+							<option value="Ruby">Ruby</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td style ="text-align: right;">
+						<input type="checkbox" name="condition" value="checked">
+					</td>
+					<td>Agree terms and conditions</td>
+				</tr>
+				
+				<tr>
+					<td>
+						
+					</td>
+					
+					<td>
+						<button "submit">Register</button>
+						<button "reset">Reset</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</body>
+</html>

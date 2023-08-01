@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <servlet>
+    <description></description>
+    <display-name>SS1</display-name>
+    <servlet-name>SS1</servlet-name>
+    <servlet-class>com.servlet.SS1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SS1</servlet-name>
+    <url-pattern>/SS1</url-pattern>
+  </servlet-mapping>
+  <display-name>1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>first</servlet-name>
+    <servlet-class>com.servlet.FirstServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>third</servlet-name>
+    <servlet-class>com.servlet.ThirdServHttp</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>second</servlet-name>
+    <servlet-class>com.servlet.Generic</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>successServ</servlet-name>
+    <servlet-class>com.servlet.SuccessServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>fourth</servlet-name>
+    <servlet-class>com.servlet.RegisterServlet</servlet-class>
+  </servlet>
+</web-app>
